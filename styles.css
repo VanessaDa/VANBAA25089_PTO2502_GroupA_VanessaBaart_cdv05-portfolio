@@ -44,3 +44,59 @@ a:focus {
   outline: 3px solid var(--brand);
   outline-offset: 2px;
 }
+.container {
+  width: min(100% - 2rem, var(--maxw));
+  margin-inline: auto;
+}
+.section {
+  padding: 4rem 0;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--brand);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 10;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  color: var(--text);
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.nav__toggle {
+  display: none;
+}
