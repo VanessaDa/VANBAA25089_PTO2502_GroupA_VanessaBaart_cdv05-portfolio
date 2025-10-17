@@ -7,6 +7,9 @@ Designed with accessibility, semantic HTML, and user experience in mind.
 
 ## 🚀 Live Demo
 
+> ⚠️ _Currently not deployed._  
+> You can view all project files locally or deploy easily using GitHub Pages or Netlify (instructions below).
+
 - 💾 **Repository:** [https://github.com/VanessaDa/cdv05-portfolio](https://github.com/VanessaDa/cdv05-portfolio)
 
 ---
@@ -16,8 +19,8 @@ Designed with accessibility, semantic HTML, and user experience in mind.
 This portfolio serves as the **final deliverable for the CodeSpace CDV05 milestone**.  
 It highlights my technical proficiency in **HTML, CSS, and JavaScript**, while showcasing two key portfolio pieces:
 
-- A **Responsive Resume Website** (SDFPP 2025)
-- A **Dynamic Kanban Board App** (JSLPP 2025)
+- 🧾 **Responsive Resume Website** (SDFPP 2025)
+- 🗂️ **Dynamic Kanban Board App** (JSLPP 2025)
 
 It demonstrates my ability to translate **Figma designs into pixel-perfect, accessible, and responsive web pages**.
 
@@ -29,8 +32,8 @@ It demonstrates my ability to translate **Figma designs into pixel-perfect, acce
 - 🎨 **Accessible design:** semantic HTML, visible focus, skip links
 - 🧱 **Reusable layout components** (grid, cards, buttons)
 - 🧭 **Sticky navigation bar** with mobile toggle
-- 📸 **Project showcase section** with live links, repos, and presentations
-- 🔍 **SEO optimization** with meta tags, Open Graph, and Schema.org Person data
+- 📸 **Project showcase section** with links to live demos, presentations, and repos
+- 🔍 **SEO optimization** with meta tags and Schema.org data
 - ♿ **Reduced motion support** and color contrast compliance
 
 ---
@@ -38,9 +41,9 @@ It demonstrates my ability to translate **Figma designs into pixel-perfect, acce
 ## 🛠️ Tech Stack
 
 - **HTML5** — Semantic structure and accessibility
-- **CSS3** — Variables, grid/flexbox, and responsive design
+- **CSS3** — Custom properties, grid/flexbox, and responsive design
 - **JavaScript (ES6)** — Navigation toggle, dynamic footer year
-- **GitHub Pages** — Deployment
+- **GitHub Pages / Netlify** — Optional deployment
 - **Figma** — Visual reference for layout and typography
 
 ---
@@ -81,19 +84,20 @@ A functional task management web app with CRUD, theme toggle, and LocalStorage.
 
 ## ♿ Accessibility
 
-- Semantic HTML structure (`<header>`, `<main>`, `<section>`)
+- Semantic structure (`<header>`, `<main>`, `<section>`)
 - Visible focus indicators and skip link
-- High contrast theme and dark-mode support
-- Keyboard-navigable menu
+- High contrast color scheme
+- Keyboard-accessible navigation
+- Reduced motion for users with preferences
 
 ---
 
 ## 🔍 SEO Enhancements
 
 - Descriptive `<title>` and `<meta>` tags
-- Canonical URL
-- Open Graph and Twitter meta for sharing
-- JSON-LD Person Schema
+- Structured data (Schema.org Person)
+- Open Graph meta for social sharing
+- Optimized asset naming and alt text
 
 ---
 
@@ -115,6 +119,24 @@ Or open directly with **VS Code Live Server**.
 
 ---
 
+## 🌐 How to Deploy (Optional)
+
+### GitHub Pages
+
+1. Push your code to GitHub.
+2. Go to **Settings → Pages → Deploy from branch**.
+3. Choose `main` as the branch and `/ (root)` as the folder.
+4. Click **Save** — your site will be live within minutes.
+
+### Netlify (Drag & Drop)
+
+1. Zip the project folder.
+2. Visit [https://www.netlify.com](https://www.netlify.com) and log in.
+3. Click **Add new site → Deploy manually**.
+4. Drag and drop your ZIP file to publish instantly.
+
+---
+
 ## 👩‍💻 Author
 
 **Vanessa Baart**  
@@ -125,12 +147,6 @@ Or open directly with **VS Code Live Server**.
 
 ## 🏫 Academic Context
 
-This project forms part of the **CodeSpace Academy CDV05 (Developer Portfolio)** milestone — showcasing design precision, technical skill, and professional presentation.
-
-Focus areas:
-
-- Responsive web design
-- Accessibility & SEO
-- Project presentation and documentation
+This project forms part of the **CodeSpace Academy CDV05 (Developer Portfolio)** milestone — demonstrating design precision, responsive layout, accessibility, and professional presentation.
 
 ---
