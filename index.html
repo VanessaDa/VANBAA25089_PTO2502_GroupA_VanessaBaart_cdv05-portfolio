@@ -3,45 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Vanessa Baart — Developer Portfolio</title>
     <meta
       name="description"
       content="Developer portfolio for Vanessa Baart — showcasing front-end projects, skills, and contact details."
     />
-    <!-- Basic SEO -->
-    <link rel="canonical" href="https://vanessada.github.io/cdv05-portfolio/" />
     <meta name="author" content="Vanessa Baart" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (kept generic; removed URL/image since no live demo yet) -->
     <meta property="og:title" content="Vanessa Baart — Developer Portfolio" />
     <meta
       property="og:description"
       content="Explore Vanessa's projects in front-end development, responsive design, and accessible UI implementation."
     />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://vanessada.github.io/cdv05-portfolio/"
-    />
-    <meta
-      property="og:image"
-      content="https://vanessada.github.io/cdv05-portfolio/assets/Resume.png"
-    />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css" />
-  </head>
-</html>
- <!-- Schema.org Person -->
+
+    <!-- Schema.org Person -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Vanessa Baart",
         "jobTitle": "Front-End Developer",
-        "url": "https://vanessada.github.io/cdv05-portfolio/",
-        "image": "https://vanessada.github.io/cdv05-portfolio/assets/headshot.jpg",
+        "url": "https://github.com/VanessaDa",
+        "image": "headshot.jpg",
         "knowsAbout": ["HTML", "CSS", "JavaScript", "Testing"],
         "sameAs": [
           "https://www.linkedin.com/in/vanessa-gwama-50841ab7",
@@ -66,21 +55,22 @@
           Menu
         </button>
         <ul id="menu" class="nav__list">
+          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main id="main">
-       <!-- Hero -->
+      <!-- Hero -->
       <section id="home" class="hero" aria-label="Introduction">
         <div class="container">
           <div class="hero__content">
             <img
               class="hero__avatar"
-              src="assets/headshot.jpg"
+              src="/assets/headshot.jpg"
               alt="Portrait of Vanessa Baart"
               width="128"
               height="128"
@@ -106,6 +96,22 @@
           </div>
         </div>
       </section>
+
+      <!-- About (moved directly under Hero) -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About</h2>
+          <p>
+            I’m a Front-End Developer transitioning from a QA leadership
+            background, bringing 12+ years of quality-driven experience to
+            modern web development. I focus on building accessible, responsive,
+            and maintainable interfaces using clean, tested code. Passionate
+            about creating seamless user experiences that align with both
+            business objectives and design vision.
+          </p>
+        </div>
+      </section>
+
       <!-- Projects -->
       <section id="projects" class="section" aria-labelledby="projects-title">
         <div class="container">
@@ -114,7 +120,7 @@
             <!-- Project 1: Resume Website -->
             <article class="card project">
               <img
-                src="assets/Resume.png"
+                src="/assets/Resume.png"
                 alt="Screenshot of Vanessa Baart Resume Website"
                 class="card__img"
                 loading="lazy"
@@ -133,14 +139,7 @@
                   Tech: HTML5, CSS3, Google Fonts (Poppins), Icons8, Devicon
                 </p>
                 <p>
-                  <a
-                    class="btn btn--sm"
-                    target="_blank"
-                    href="https://github.com/VanessaDa/VANBAA25089_PTO2502_GroupA_VanessaBaart_SDFPP"
-                    target="_blank"
-                    rel="noopener"
-                    >Live</a
-                  >
+                  <!-- No live demo yet; keeping Presentation + Repo only -->
                   <a
                     class="btn btn--sm"
                     href="https://www.veed.io/view/881ab615-5c96-4ca7-9790-ed3f5a629149?panel=share"
@@ -162,7 +161,7 @@
             <!-- Project 2: Kanban Portfolio Piece -->
             <article class="card project">
               <img
-                src="assets/Kanban_Board.png"
+                src="/assets/Kanban_Board.png"
                 alt="Screenshot of Kanban Board Portfolio Piece"
                 class="card__img"
                 loading="lazy"
@@ -207,7 +206,8 @@
           </div>
         </div>
       </section>
- <!-- Skills -->
+
+      <!-- Skills -->
       <section id="skills" class="section" aria-labelledby="skills-title">
         <div class="container">
           <h2 id="skills-title">Skills</h2>
@@ -222,21 +222,7 @@
         </div>
       </section>
 
-      <!-- About -->
-      <section id="about" class="section" aria-labelledby="about-title">
-        <div class="container">
-          <h2 id="about-title">About</h2>
-          <p>
-            I’m a Front-End Developer transitioning from a QA leadership
-            background, bringing 12+ years of quality-driven experience to
-            modern web development. I focus on building accessible, responsive,
-            and maintainable interfaces using clean, tested code. Passionate
-            about creating seamless user experiences that align with both
-            business objectives and design vision.
-          </p>
-        </div>
-      </section>
-        <!-- Contact -->
+      <!-- Contact -->
       <section id="contact" class="section" aria-labelledby="contact-title">
         <div class="container">
           <h2 id="contact-title">Contact</h2>
