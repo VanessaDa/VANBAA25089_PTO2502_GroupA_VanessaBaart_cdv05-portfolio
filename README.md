@@ -10,8 +10,6 @@ Designed with accessibility, semantic HTML, and user experience in mind.
 > ⚠️ _Currently not deployed._  
 > You can view all project files locally or deploy easily using GitHub Pages or Netlify (instructions below).
 
-- 💾 **Repository:** [https://github.com/VanessaDa/cdv05-portfolio](https://github.com/VanessaDa/cdv05-portfolio)
-
 ---
 
 ## 🧩 Project Overview
