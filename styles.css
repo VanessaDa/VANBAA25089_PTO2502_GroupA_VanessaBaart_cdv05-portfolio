@@ -1,3 +1,7 @@
+/* =========================
+   🌟 Portfolio Styles
+   ========================= */
+
 :root {
   --bg: #ffffff;
   --text: #101010;
@@ -7,16 +11,21 @@
   --radius: 16px;
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   --maxw: 1080px;
+  color-scheme: light; /* Force light as baseline */
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0e10;
-    --text: #f2f2f2;
-    --muted: #b6b6b6;
-    --surface: #17171a;
-    --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-  }
+
+/* Dark mode (manual toggle only — not auto) */
+html[data-theme="dark"] {
+  --bg: #0e0e10;
+  --text: #f2f2f2;
+  --muted: #b6b6b6;
+  --surface: #17171a;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
+
+/* =========================
+   Base & Layout
+   ========================= */
 * {
   box-sizing: border-box;
 }
@@ -32,10 +41,14 @@ body {
   background: var(--bg);
   line-height: 1.6;
 }
+
 img {
   max-width: 100%;
+  height: auto;
   display: block;
+  border-radius: 12px;
 }
+
 a {
   color: var(--brand);
   text-decoration: none;
@@ -44,18 +57,24 @@ a:focus {
   outline: 3px solid var(--brand);
   outline-offset: 2px;
 }
+
 .container {
   width: min(100% - 2rem, var(--maxw));
   margin-inline: auto;
 }
+
 .section {
   padding: 4rem 0;
 }
+
 .grid {
   display: grid;
   gap: 1.5rem;
 }
 
+/* =========================
+   Accessibility
+   ========================= */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -70,6 +89,9 @@ a:focus {
   border-radius: 0.5rem;
 }
 
+/* =========================
+   Header & Navigation
+   ========================= */
 .site-header {
   position: sticky;
   top: 0;
@@ -100,6 +122,7 @@ a:focus {
 .nav__toggle {
   display: none;
 }
+
 @media (max-width: 720px) {
   .nav__toggle {
     display: inline-flex;
@@ -128,6 +151,9 @@ a:focus {
   }
 }
 
+/* =========================
+   Hero Section
+   ========================= */
 .hero {
   padding: clamp(3rem, 4vw + 1rem, 6rem) 0 2rem;
   background: linear-gradient(180deg, var(--surface), transparent 60%);
@@ -141,6 +167,10 @@ a:focus {
   border-radius: 50%;
   box-shadow: var(--shadow);
 }
+
+/* =========================
+   Buttons
+   ========================= */
 .btn {
   display: inline-block;
   padding: 0.7rem 1rem;
@@ -148,6 +178,11 @@ a:focus {
   background: var(--brand);
   color: #fff;
   font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 .btn--ghost {
   background: transparent;
@@ -159,6 +194,9 @@ a:focus {
   font-size: 0.9rem;
 }
 
+/* =========================
+   Cards
+   ========================= */
 .card {
   background: var(--bg);
   border: 1px solid #e9e9e9;
@@ -178,18 +216,39 @@ a:focus {
   font-size: 0.95rem;
 }
 
+/* =========================
+   Projects Section
+   ========================= */
 .projects {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
+/* =========================
+   Skills Section
+   ========================= */
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.75rem;
-  padding-left: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem 1.25rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.skills li {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  line-height: 1.35;
+  background: var(--surface);
 }
 
+/* =========================
+   Footer
+   ========================= */
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 1.5rem 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
